@@ -38,10 +38,10 @@ data_generation = function(x, y, z = 1){
 n = 784
 locations = as.matrix(expand.grid(seq(0,1,length.out=sqrt(n)), seq(0,1,length.out=sqrt(n))))
 
-M = 10  # number of simulations
+M = 1  # number of simulations
 
 ## sequence of mesh nodes
-seq_N =  c(256,484,1024,2025,3969)
+seq_N = c(2025) #  c(256,484,1024,2025,3969)
 
 mat_RMSE_R_lumpFALSE = matrix(ncol = M, nrow = length(seq_N))
 mat_RMSE_Cpp_lumpFALSE = matrix(ncol = M, nrow = length(seq_N))
@@ -247,6 +247,8 @@ myturquoise <- rgb(0, 0.81*255, 0.82*255, max = 255, alpha = 175)
 myturquoise_dark <- rgb(0, 0.81*255, 0.82*255, max = 255, alpha = 255)
 
 
+ylim = c(min(mat_time_R_lumpFALSE, mat_time_R_lumpTRUE), 
+         max(mat_time_R_lumpFALSE, mat_time_R_lumpTRUE))
 boxplot(t(mat_time_R_lumpFALSE), 
         col = myturquoise, 
         medcol =  myturquoise_dark,
@@ -254,7 +256,7 @@ boxplot(t(mat_time_R_lumpFALSE),
         whiskcol = myturquoise_dark,
         staplecol = myturquoise_dark,
         outcol = myturquoise_dark,
-        outpch = 19, 
+        outpch = 19, ylim = ylim, 
         main = "Computational times [secs] (R)")
 boxplot(t(mat_time_R_lumpTRUE), 
         col = myblue, 
