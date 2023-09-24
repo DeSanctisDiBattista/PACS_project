@@ -6,7 +6,7 @@ This repository contains the development version of fdaPDE library. In particula
 - /fdaPDE contains all C++ code (development version of the fdaPDE library forked from https://github.com/AlePalu/fdaPDE). The implemented class SQRPDE is contained in /fdaPDE/fdaPDE/models/regression. 
 
 - /tests_wrappers contains: 
- - - the tests's folders /Test_1,...,/Test_6,/Test_8,...,/Test_10 to run the correspondent simulation tests from R, relying on the C++/R wrapper structure contained in ../fdaPDE/wrappers. 
+   -- the tests's folders /Test_1,...,/Test_6,/Test_8,...,/Test_10 to run the correspondent simulation tests from R, relying on the C++/R wrapper structure contained in ../fdaPDE/wrappers. 
      Each folder contains an .R file to run the test, a README file which briefly explains the structure of the test and a subfolders' structure to store the data for the tests. 
  - - /compile_fdaPDE2.R which contains the instructions to install the fdaPDE2 library required to run the test with R/C++ wrappers. 
  - - src_R which contains the source code made by C.Castiglione to run the R version algorithm of SQR-PDE. Some functions in src_R have been slightly modified to accomplish our purposes. 
