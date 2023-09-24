@@ -246,7 +246,8 @@ mybarbiepink_dark <- rgb(85, 9, 52, max = 255, alpha = 255)
 myturquoise <- rgb(0, 0.81*255, 0.82*255, max = 255, alpha = 175)
 myturquoise_dark <- rgb(0, 0.81*255, 0.82*255, max = 255, alpha = 255)
 
-
+ylim = c(min(mat_time_R_lumpFALSE, mat_time_R_lumpTRUE), 
+         max(mat_time_R_lumpFALSE, mat_time_R_lumpTRUE))
 boxplot(t(mat_time_R_lumpFALSE), 
         col = myturquoise, 
         medcol =  myturquoise_dark,
@@ -254,7 +255,7 @@ boxplot(t(mat_time_R_lumpFALSE),
         whiskcol = myturquoise_dark,
         staplecol = myturquoise_dark,
         outcol = myturquoise_dark,
-        outpch = 19, 
+        outpch = 19, ylim = ylim,
         main = "Computational times [secs] (R)")
 boxplot(t(mat_time_R_lumpTRUE), 
         col = myblue, 
