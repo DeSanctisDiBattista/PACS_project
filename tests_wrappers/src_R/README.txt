@@ -1,0 +1,2 @@
+The content of this folder is taken from C.Castiglione. We have used it to have the primitive version of SQRPDE to be compared with our version in the new version of the fdaPDE.    
+The functions have some little modifications in order to suit for our tasks. 
