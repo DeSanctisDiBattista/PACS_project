@@ -26,9 +26,9 @@ To compile the C++ library, the following dependencies have to be installed:
  - Eigen linear algebra library (version higher than 3.3)
 
  To generate the Makefile, compile and run the code, go to fdaPDE/test and execute from shell: 
-   cmake CMakeLists.txt
-   make
-   ./fdaPDE_test
+  - cmake CMakeLists.txt
+  - make
+  - ./fdaPDE_test
 
  This will run all the tests included in test/MainTest.cpp, in particular the GCV tests implemented in test/calibration/GCVTest.cpp   
 
