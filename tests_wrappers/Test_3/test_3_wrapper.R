@@ -89,7 +89,7 @@ for(alpha in alphas){
     suppressWarnings({
       lambda <- read.csv(paste0(getwd(), "/alpha_", 
                                 as.character(alpha*100), "/sim_", 
-                                m, "/GCV/Exact/LambdaCpp.csv"), header = FALSE)$V1
+                                m, "/LambdaCpp.csv"), header = TRUE)$x
     })
     
     model$set_lambda_s(lambda)
