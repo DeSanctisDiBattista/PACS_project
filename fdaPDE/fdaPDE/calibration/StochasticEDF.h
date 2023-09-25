@@ -19,7 +19,7 @@ namespace calibration{
     static_assert(is_regression_model<Model>::value);
 
   private:
-    Model& model_;       // ATT: anche qui tolto const 
+    Model& model_;       
     std::size_t r_;      // number of monte carlo realizations
     std::size_t seed_;
     DMatrix<double> Us_; // sample from Rademacher distribution
