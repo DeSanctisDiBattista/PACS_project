@@ -33,7 +33,8 @@ To compile the C++ library, the following dependencies have to be installed:
  This will run all the tests included in test/MainTest.cpp, in particular the GCV tests implemented in test/calibration/GCVTest.cpp   
 
 To run the simulation tests relying on the R/C++ wrappers, the following R packages have to be installed: 
-- fdaPDE2: to install it, follow the content in /compile_fdaPDE2.R. 
+- fdaPDE2: to install it, follow the content in /tests_wrappers/compile_fdaPDE2.R. 
 - fdaPDE: to install it run from R terminal the command install.packages('fdaPDE')
 - minor packages (e.g. 'Matrix', 'plot3D', 'geoR'...): easly installed with the R command install.packages('PackageName')
+Finally to run the simulation test 'TestNumber' launch the script .R in the /tests_wrappers/Test_TestNumber
 
