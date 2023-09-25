@@ -14,7 +14,7 @@ system.file(package='RcppEigen')
 # load Rcpp library
 library(Rcpp)
 
-setwd(paste0(getwd(), "../fdaPDE/wrappers/R/"))
+setwd(paste0(getwd(), "/../fdaPDE/wrappers/R/"))
 
 # update RCppExports.cpp
 compileAttributes(".")
